@@ -1,5 +1,5 @@
 const express = require('express');
-const WorkerController = require('src/controllers/worker-controller')
+const WorkerController = require('./src/controllers/worker-controller')
 let app = express();
 
 let workerController = new WorkerController();

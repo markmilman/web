@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=. node index.js",
+    "start": "NODE_PATH=. node src/playground/index.js",
+    "debug": "NODE_PATH=. node src/playground/index.js",
     "start-watch": "./node_modules/.bin/nodemon --exec 'npm start",
     "test": "NODE_PATH=. jest",
     "test-watch": "nodemon --exec 'npm test'"
@@ -27,6 +28,9 @@
     "supertest": "^3.0.0"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "js-data": "^3.0.2",
+    "js-data-sql": "^1.0.1",
+    "mysql": "^2.15.0"
   }
 }
